@@ -1,0 +1,207 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+
+font-family: 'M PLUS 1', sans-serif;
+/* scroll-behavior: auto; */
+
+
+}.desktop{
+    display: initial;
+/* }
+@media(max-width: 955px){
+    .desktop {
+        display:none;
+
+    }
+
+    footer{
+        display:none;
+    } */
+}
+header{
+    
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+
+}a.logo{
+    height: 12px;
+    width: 100px;
+    color: inherit;
+}header a{
+    color: inherit;
+    
+}header nav a{
+    padding: 5px 10px;
+    text-decoration: none;
+
+}header nav.centre{
+    text-align: center;
+
+}header nav.right{
+    text-align: right;
+
+}section{
+
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center center;
+
+
+
+}section .content{
+    width: 100%;
+    height: 100vh;
+    padding: 15vh 15vh;
+    text-align: center;
+    display: grid;
+    /* Auto align the 3 rows */
+    grid-template-rows: min-content auto min-content;
+    color: inherit;
+
+
+}section h1{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 300;
+
+}section a{
+
+    text-decoration: none;
+    color: inherit;
+    
+}section .buttons a{
+    /* All buttons */
+    /* display: block; */
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 50px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size:12px ;
+
+    display: grid;
+    
+
+}section .buttons a:first-child{
+    /* Change color of first button */
+    color: white;
+    background-color: #444;
+
+}section .buttons{
+    /* Gap Between buttons */
+    /* on normal desktop mode */
+    display: grid;
+    row-gap: 20px;
+    
+}@media(min-width: 768px){
+    /* For Buttons in responsive display */
+    section .buttons{
+        grid-template-columns: 1fr 1fr;
+        max-width: 640px;
+        margin: 0 auto;
+        column-gap: 20px;
+        
+    }
+}.accessories{
+
+    display: grid;
+    grid-template-rows: auto min-content;
+    width: 100%;
+    height: 35vh;
+    text-align: center;
+    padding: 5vh 20vh 0vh 20vh;
+    
+
+  
+
+/* }.centre:hover{
+
+    opacity: 20%;
+    background-color: #eee; */
+
+/* }.desktop:hover{
+
+    opacity: 20%;
+    background-color: #eee;
+     */
+}footer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 300px;
+    font-size: x-small;
+    background: transparent;
+    bottom: 0;
+    border: 0;
+    font-weight: bold;
+}.footer{
+    text-decoration: none;
+    color:#393c41;
+
+
+}@media(max-width: 1000px){
+    .desktop {
+        display:none;
+
+    }
+
+    footer{
+        background: transparent;
+        display:none;
+        text-decoration: none;
+    }
+}
+/* Buttons for accessories */
+.buttons2{
+
+    grid-template-columns: 1fr 1fr;
+    max-width: 640px;
+    margin: 0 auto;
+    column-gap: 20px;
+ 
+    display: block;
+    background-color: rgb(7, 7, 7);
+    color: #eee;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size:12px ;
+}aside{
+    position: fixed;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    background-color: white;
+    padding: 50px 20px;
+
+ 
+}aside a{
+    display:block;
+    text-decoration: none;
+    padding: 3px;
+    color: inherit;
+
+}aside button.close{
+    border: 0;
+    background: transparent;
+    font-size: small;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-family: sans-serif;
+    font-weight: 100;
+
+}
